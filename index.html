@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50 py-5">
+            <form>
+                <div class="form-group d-flex t">
+                    <input placeholder="nhập số thứ nhất" type="number" class="form-control mr-2 w-auto" id="number1">
+                    <input placeholder="nhập số thứ 2" type="number" class="form-control mr-2 w-auto" id="number2">
+                    <input placeholder="nhập số thứ 3" type="number" class="form-control mr-2 w-auto" id="number3">
+                </div>
+                <button onclick="sapXep()" type="button" class="btn btn-primary">SapXep</button>
+            </form>
+            <p id="txtnumber1" class="alert alert-danger">
+                Thứ tự sau khi sắp xếp
+            </p>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <div class="card-header text-white bg-primary text-center">
+                Chào Hỏi
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="">Bạn muốn gửi lời chào đến !</label>
+                        <select class="form-control" id="idmay">
+                            <option>--Chọn Thành viên--</option>
+                            <option value="B">Bố</option>
+                            <option value="M">Mẹ</option>
+                            <option value="A">anh Trai</option>
+                            <option value="EG">em Gái</option>
+                        </select>
+                    </div>
+                    <button onclick="chaoHoi()" type="button" class="btn bg-primary">Gửi Lời Chào</button>
+                </form>
+                <p id="txtnumber2" class="alert alert-danger">
+                    Lời Chào
+                </p>
+            </div>
+        </div>
+        <div class="w-50 py-5 ">
+            <form>
+                <div class="form-group d-flex t">
+                    <input placeholder="nhập số thứ nhất " type="number" class="form-control mr-2 w-auto" id="number4">
+                    <input placeholder="nhập số thứ 2 " type="number" class="form-control mr-2 w-auto" id="number5">
+                    <input placeholder="nhập số thứ 3 " type="number" class="form-control mr-2 w-auto" id="number6">
+                </div>
+                <button onclick="chanLe()" type="button" class="btn btn-primary">KetQua</button>
+            </form>
+            <p id="txtnumber3" class="alert alert-danger">
+                số số chẵn, số số lẻ
+            </p>
+        </div>
+        <div class="w-50 py-5">
+            <form>
+                <div class="form-group d-flex t">
+                    <input placeholder="nhập cạnh thứ nhất " type="number" class="form-control mr-2 w-auto" id="number7">
+                    <input placeholder="nhập cạnh thứ 2 " type="number" class="form-control mr-2 w-auto" id="number8">
+                    <input placeholder="nhập cạnh thứ 3 " type="number" class="form-control mr-2 w-auto" id="number9">
+                </div>
+                <button onclick="tamGiac()" type="button" class="btn btn-primary">KetQua</button>
+            </form>
+            <p id="txtnumber4" class="alert alert-danger ">
+                Tam giác
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
